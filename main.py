@@ -65,4 +65,4 @@ def play_game(max_rounds):
 play_game(5)
 
 #You can now play the game
-
+#Try beat the computer 
