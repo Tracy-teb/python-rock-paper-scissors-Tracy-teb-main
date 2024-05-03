@@ -7,22 +7,20 @@ choices = ["rock", "paper", "scissors"]
 #defining a function and rules of the game
 def game_winner(computer_choice, human_choice):
     if computer_choice == human_choice:
+        print(f"This is the {computer_choice}, This is the {human_choice}")
         return "tie"
-    elif computer_choice == "rock":
-        if human_choice == "scissors":
-            return "computer"
-        else:
-            return "human"
-    elif computer_choice == "paper":
-        if human_choice == "rock":
-            return "computer"
-        else:
-            return "human"
-    elif computer_choice == "scissors":
-        if human_choice == "paper":
-            return "computer"
-        else:
-            return "human"
+    
+    elif computer_choice == "rock" and human_choice == "scissors":
+        print(f"This is the {computer_choice}, This is the {human_choice}")
+        return "computer"
+        
+    elif computer_choice == "paper" and human_choice == "rock":
+        print(f"This is the {computer_choice}, This is the {human_choice}")
+        return "computer"
+       
+    elif computer_choice == "scissors" and human_choice == "paper":
+        print(f"This is the {computer_choice}, This is the {human_choice}")
+        return "computer"
     
 #Function to play the game 
 def play_game(max_rounds):
