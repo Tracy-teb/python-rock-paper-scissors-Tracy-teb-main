@@ -5,15 +5,24 @@ from random import choice
 choices = ["rock", "paper", "scissors"]
 
 #defining a function and rules of the game
-def game_winner (computer_choice, human_choice):
+def game_winner(computer_choice, human_choice):
     if computer_choice == human_choice:
-        return 'A tie'
-    elif ((computer_choice == 'rock' and human_choice == 'scissors') or
-          (computer_choice == 'paper' and human_choice == 'rock') or
-          (computer_choice == 'scissors' and human_choice == 'paper')):
-        return computer_choice
-    else:
-        return human_choice
+        return "tie"
+    elif computer_choice == "rock":
+        if human_choice == "scissors":
+            return "computer"
+        else:
+            return "human"
+    elif computer_choice == "paper":
+        if human_choice == "rock":
+            return "computer"
+        else:
+            return "human"
+    elif computer_choice == "scissors":
+        if human_choice == "paper":
+            return "computer"
+        else:
+            return "human"
     
 #Function to play the game 
 def play_game(max_rounds):
