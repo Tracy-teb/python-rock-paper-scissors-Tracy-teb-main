@@ -23,4 +23,4 @@ result = game_winner(computer_choice, human_choice)
 
 print(result)
 
-
+print(game_winner())
