@@ -13,14 +13,19 @@ def game_winner(computer_choice, human_choice):
     elif computer_choice == "rock" and human_choice == "scissors":
         print(f"This is the {computer_choice}, This is the {human_choice}")
         return "computer"
+    
         
     elif computer_choice == "paper" and human_choice == "rock":
         print(f"This is the {computer_choice}, This is the {human_choice}")
         return "computer"
        
+
     elif computer_choice == "scissors" and human_choice == "paper":
         print(f"This is the {computer_choice}, This is the {human_choice}")
         return "computer"
+    
+    else:
+        return "human"
     
 #Function to play the game 
 def play_game(max_rounds):
